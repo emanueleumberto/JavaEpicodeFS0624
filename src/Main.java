@@ -1,3 +1,4 @@
+import MyLibrary.Persona;
 import java.util.Scanner;
 
 public class Main {
@@ -27,7 +28,7 @@ public class Main {
         }*/
 
         // Soluzione con Do While
-        do {
+        /*do {
             System.out.print("Inserisci un mese (1-12): ");
             int m = Integer.parseInt(sc.nextLine());
             String mese = getMese(m);
@@ -36,6 +37,25 @@ public class Main {
             System.out.print("Vuoi continuare? (s/n) ");
 
         } while (sc.nextLine().equals("s"));
+        */
+
+        // Class
+        Persona p1 = new Persona("Mario", "Rossi", 45);
+        /*p1.nome = "Mario";
+        p1.cognome = "Rossi";
+        p1.eta = 45;*/
+
+        Persona p2 = new Persona("Giuseppe", "Verdi", 22);
+        /*p2.nome = "Giuseppe";
+        p2.cognome = "Verdi";
+        p2.eta = 22;*/
+
+        Persona p3 = new Persona("Francesca", "Neri");
+
+        p1.saluta();
+        p2.saluta();
+        p3.saluta();
+
 
 
 
